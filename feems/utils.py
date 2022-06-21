@@ -31,7 +31,7 @@ def create_tile_dict(tiles, bpoly):
     for c, poly in enumerate(tiles):
         x, y = poly.exterior.xy
         points = zip(np.round(x, 3), np.round(y, 3))
-        points = [wrap_america(p) for p in points]
+       # points = [wrap_america(p) for p in points]
         for p in points:
             if p not in pts_in:
                 # check if point is in region
